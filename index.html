@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
+  <title>Alex Lawrence — Graphic & UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- CURSOR -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<!-- MOBILE DRAWER -->
+<div class="nav-drawer" id="navDrawer">
+  <button class="drawer-close" id="drawerClose">✕</button>
+  <a href="#about" onclick="closeDrawer()">About</a>
+  <a href="#work" onclick="closeDrawer()">Work</a>
+  <a href="#services" onclick="closeDrawer()">Services</a>
+  <a href="#experience" onclick="closeDrawer()">Experience</a>
+  <a href="#contact" onclick="closeDrawer()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">
+    <img src="images/logo.png" alt="Alex Lawrence logo">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/919605195823" target="_blank" class="nav-cta">Hire Me</a>
+  <button id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+    <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+  </button>
+  <button class="nav-burger" id="navBurger">☰</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <!-- MAIN ROW: two-column bottom layout -->
+  <div class="hero-main-row">
+    <!-- Single-column layout: pills → name → desc → stats + CTA row -->
+    <div class="hero-left">
+      <div class="hero-pills" style="margin-bottom:20px">
+        <span class="pill gold">Available for Freelance</span>
+        <span class="pill">Kochi, Kerala</span>
+      </div>
+      <h1 class="hero-name" style="margin-bottom:20px">Alex<br><em>Lawrence</em></h1>
+      <p class="hero-desc" style="margin-bottom:36px">Creative graphic and UI/UX designer with a passion for bold visual storytelling. Specializing in brand identity, social media creatives, and digital experiences that make brands unforgettable.</p>
+      <div class="hero-bottom-row">
+        <a href="https://wa.me/919605195823" target="_blank" class="hero-cta">
+          Available for Work
+        </a>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years Exp</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">50+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack">
+      <span class="ticker-item">Brand Identity</span>
+      <span class="ticker-item">UI/UX Design</span>
+      <span class="ticker-item">Social Media</span>
+      <span class="ticker-item">Print Design</span>
+      <span class="ticker-item">Packaging</span>
+      <span class="ticker-item">Motion Graphics</span>
+      <span class="ticker-item">Figma</span>
+      <span class="ticker-item">Adobe Suite</span>
+      <span class="ticker-item">Brand Identity</span>
+      <span class="ticker-item">UI/UX Design</span>
+      <span class="ticker-item">Social Media</span>
+      <span class="ticker-item">Print Design</span>
+      <span class="ticker-item">Packaging</span>
+      <span class="ticker-item">Motion Graphics</span>
+      <span class="ticker-item">Figma</span>
+      <span class="ticker-item">Adobe Suite</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-left reveal">
+      <h2 class="about-heading">Designing bold<br><em>visual stories</em></h2>
+      <p class="about-bio">Creative graphic and UI/UX designer with a passion for bold visual storytelling. Specializing in brand identity, social media creatives, and digital experiences that make brands unforgettable. Based in Kochi, Kerala with 3+ years of hands-on experience delivering pixel-perfect results for clients across industries.</p>
+      <div class="signature">Alex Lawrence</div>
+      <div class="social-row">
+        <a href="https://www.behance.net/alexcl4" target="_blank" class="social-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.228 14.184c.449 0 .832-.068 1.145-.205.313-.136.557-.342.732-.617.175-.274.263-.608.263-1.001 0-.371-.08-.685-.239-.942-.159-.257-.391-.449-.694-.576-.303-.127-.67-.191-1.1-.191H5.5v3.532h2.728zM8.017 9.54c.381 0 .706-.062.975-.186.269-.124.472-.303.609-.537.138-.234.207-.511.207-.832 0-.465-.14-.816-.421-1.053-.281-.237-.68-.355-1.195-.355H5.5v2.963h2.517zm8.244 2.455c-.012-.487-.151-.909-.418-1.267-.267-.358-.661-.537-1.182-.537-.339 0-.626.065-.861.195-.235.13-.421.306-.558.527-.137.221-.21.47-.22.747h3.239zm-8.35 6.989H3V5.016h5.447c.73 0 1.374.108 1.931.323.557.215.993.551 1.306 1.008.313.457.47 1.032.47 1.725 0 .541-.13 1.02-.39 1.437-.26.417-.642.741-1.147.972.675.185 1.193.521 1.554 1.009.361.487.541 1.075.541 1.763 0 .717-.178 1.336-.534 1.855-.356.52-.849.914-1.479 1.183-.63.269-1.352.403-2.168.403zM21 13.762h-5.131c.049.654.272 1.153.668 1.497.396.344.879.516 1.45.516.449 0 .832-.099 1.148-.297.316-.198.527-.467.633-.807H21c-.192.795-.608 1.444-1.249 1.946-.641.502-1.434.753-2.377.753-.733 0-1.387-.161-1.962-.483-.575-.322-1.022-.778-1.341-1.368-.319-.59-.479-1.278-.479-2.064 0-.774.156-1.456.467-2.046.311-.59.751-1.048 1.319-1.374.568-.326 1.224-.489 1.968-.489.72 0 1.357.154 1.911.463.554.309.978.738 1.272 1.287.294.549.441 1.178.441 1.887 0 .177-.01.369-.03.579zM14.594 7.82h4.838V9h-4.838V7.82z"/></svg>
+          Behance
+        </a>
+        <a href="https://www.instagram.com/4lex_vegas1" target="_blank" class="social-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+        <a href="mailto:alexa87477@gmail.com" class="social-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email
+        </a>
+        <a href="https://wa.me/919605195823" target="_blank" class="social-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="about-right reveal">
+      <div class="stat-card">
+        <div class="stat-card-num">3+</div>
+        <div class="stat-card-info">
+          <div class="stat-card-label">Years of Experience</div>
+          <div class="stat-card-sub">Design & Branding</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-num">50+</div>
+        <div class="stat-card-info">
+          <div class="stat-card-label">Projects Completed</div>
+          <div class="stat-card-sub">Across all verticals</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-num">30+</div>
+        <div class="stat-card-info">
+          <div class="stat-card-label">Happy Clients</div>
+          <div class="stat-card-sub">Worldwide collaborations</div>
+        </div>
+      </div>
+      <div class="avail-card">
+        <div>
+          <div class="avail-card-label">Current Status</div>
+          <div class="avail-card-text">Available for Work</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLKIT -->
+<section id="toolkit">
+  <div class="toolkit-inner">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Tools I <em>master</em></h2>
+      </div>
+    </div>
+    <div class="toolkit-grid reveal">
+      <div class="tool-item">
+        <div class="tool-header"><span class="tool-name">Figma</span><span class="tool-pct">95%</span></div>
+        <div class="tool-bar"><div class="tool-fill" data-pct="95"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-header"><span class="tool-name">Adobe Illustrator</span><span class="tool-pct">90%</span></div>
+        <div class="tool-bar"><div class="tool-fill" data-pct="90"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-header"><span class="tool-name">Adobe Photoshop</span><span class="tool-pct">85%</span></div>
+        <div class="tool-bar"><div class="tool-fill" data-pct="85"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-header"><span class="tool-name">Adobe InDesign</span><span class="tool-pct">80%</span></div>
+        <div class="tool-bar"><div class="tool-fill" data-pct="80"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-header"><span class="tool-name">Canva</span><span class="tool-pct">88%</span></div>
+        <div class="tool-bar"><div class="tool-fill" data-pct="88"></div></div>
+      </div>
+
+      <div class="tool-item">
+        <div class="tool-header"><span class="tool-name">ChatGPT / AI Tools</span><span class="tool-pct">92%</span></div>
+        <div class="tool-bar"><div class="tool-fill" data-pct="92"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="work-inner">
+    <div class="section-header">
+      <div class="work-header-top">
+        <h2 class="section-title">Selected <em>Work</em></h2>
+        <div class="work-tabs" id="workTabs">
+          <button class="work-tab active" data-filter="all">All</button>
+          <button class="work-tab" data-filter="UI/UX">UI / UX</button>
+          <button class="work-tab" data-filter="Branding">Branding</button>
+          <button class="work-tab" data-filter="Social Media">Social Media</button>
+        </div>
+      </div>
+    </div>
+    <div class="work-carousel">
+      <div class="sw-track-wrap">
+        <div class="sw-track" id="swTrack">
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-kwiklok.jpg" alt="KwikLok Smart Storage Website">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">UI/UX</div>
+              <div class="sw-card-title">KwikLok Smart Storage Website</div>
+              <a href="https://www.behance.net/gallery/250481431/KWIKLOK-UI-MOCKUPS" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-qwy.png" alt="QWY Software Web Design">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">UI/UX</div>
+              <div class="sw-card-title">QWY Software Web Design</div>
+              <a href="https://www.behance.net/gallery/245418937/QWY-UI" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-shubaangi.jpg" alt="Shubaangi Home Textiles">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">UI/UX</div>
+              <div class="sw-card-title">Shubaangi Home Textiles</div>
+              <a href="https://www.behance.net/gallery/250497163/SHUBAANGI-UI" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-acst.jpg" alt="ACST College Website">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">UI/UX</div>
+              <div class="sw-card-title">ACST College Website</div>
+              <a href="https://www.behance.net/gallery/245553373/AMAN-COLLEGE-UI" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-elsa.jpg" alt="Elsa Agency Website">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">UI/UX</div>
+              <div class="sw-card-title">Elsa Agency Website</div>
+              <a href="https://www.behance.net/gallery/250493769/ELSA-AGENCY-UI" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-catholic-arts.jpg" alt="Catholic Arts Centre">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">UI/UX</div>
+              <div class="sw-card-title">Catholic Arts Centre</div>
+              <a href="https://www.behance.net/gallery/250532531/CATHOLIC-ART-CENTRE-UI" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-house-master.jpg" alt="House Master Facility Management">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">UI/UX</div>
+              <div class="sw-card-title">House Master Facility Management</div>
+              <a href="https://www.behance.net/gallery/250499065/HOUSE-MASTER-UI" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-fabsketch.jpg" alt="FabSketch Interior Design App">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">UI/UX</div>
+              <div class="sw-card-title">FabSketch Interior Design App</div>
+              <a href="https://www.behance.net/gallery/207854265/FABSKETCH-UI" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-hohberht.jpg" alt="Hohberht Smart Home Branding">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">Branding</div>
+              <div class="sw-card-title">Hohberht Smart Home Branding</div>
+              <a href="https://www.behance.net/gallery/242415331/HOHBERHT-LOGO" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-aeden-package.png" alt="Aeden Fresh Packaging Design">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">Branding</div>
+              <div class="sw-card-title">Aeden Fresh Packaging Design</div>
+              <a href="https://www.behance.net/gallery/250643915/AEDEN-FRESH-PACKAGE" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-edrodent.png" alt="Edrodent Dental Exports Logo">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">Branding</div>
+              <div class="sw-card-title">Edrodent Dental Exports Logo</div>
+              <a href="https://www.behance.net/gallery/246160449/EDRODENT-LOGO" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-ventilux.jpg" alt="Ventilux Brand Identity">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">Branding</div>
+              <div class="sw-card-title">Ventilux Brand Identity</div>
+              <a href="https://www.behance.net/gallery/185373657/BRAND-BOOK" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-social-ad.png" alt="Social Media Ad Campaign">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">Social Media</div>
+              <div class="sw-card-title">Social Media Ad Campaign</div>
+              <a href="https://www.behance.net/gallery/250480953/NO-SALE-CAROUSEL" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-aeden-relaunch.png" alt="Aeden Fresh Relaunch Campaign">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">Social Media</div>
+              <div class="sw-card-title">Aeden Fresh Relaunch Campaign</div>
+              <a href="https://www.behance.net/gallery/250644385/RELAUNCH-CAROUSEL" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-qwy-social.png" alt="QWY Software Social Creative">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">Social Media</div>
+              <div class="sw-card-title">QWY Software Social Creative</div>
+              <a href="https://www.behance.net/gallery/250644219/EXCEL-CAROUSEL" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card" data-category="Social Media">
+            <img class="sw-card-img" src="images/work-social-creatives.png" alt="Social Media Creatives" loading="lazy">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">Social Media</div>
+              <div class="sw-card-title">Social Media Creatives</div>
+              <a href="https://www.behance.net/gallery/193273013/SOCIALMEDIA-ADS" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+          <div class="sw-card">
+            <img class="sw-card-img" src="images/work-social-france.png" alt="Social Media Creatives — Study in France">
+            <div class="sw-card-body">
+              <div class="sw-card-cat">Social Media</div>
+              <div class="sw-card-title">Social Media Creatives</div>
+              <a href="https://www.behance.net/gallery/193273013/SOCIALMEDIA-ADS" target="_blank" class="sw-card-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="swPrev">←</button>
+        <div class="carousel-dots" id="swDots"></div>
+        <button class="carousel-btn" id="swNext">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS MARQUEE -->
+<section id="skills">
+  <div class="marquee-row" id="mq1">
+    <span class="marquee-item filled">Brand Identity</span>
+    <span class="marquee-item">UI/UX Design</span>
+    <span class="marquee-item filled">Logo Design</span>
+    <span class="marquee-item">Social Media</span>
+    <span class="marquee-item filled">Packaging</span>
+    <span class="marquee-item">Print Design</span>
+    <span class="marquee-item filled">Motion Graphics</span>
+    <span class="marquee-item">Wireframing</span>
+    <span class="marquee-item filled">Brand Identity</span>
+    <span class="marquee-item">UI/UX Design</span>
+    <span class="marquee-item filled">Logo Design</span>
+    <span class="marquee-item">Social Media</span>
+    <span class="marquee-item filled">Packaging</span>
+    <span class="marquee-item">Print Design</span>
+    <span class="marquee-item filled">Motion Graphics</span>
+    <span class="marquee-item">Wireframing</span>
+  </div>
+  <div class="marquee-row reverse" id="mq2">
+    <span class="marquee-item">Figma</span>
+    <span class="marquee-item filled">Illustrator</span>
+    <span class="marquee-item">Photoshop</span>
+    <span class="marquee-item filled">InDesign</span>
+    <span class="marquee-item">Canva</span>
+    <span class="marquee-item filled">AI Tools</span>
+    <span class="marquee-item">Figma</span>
+    <span class="marquee-item filled">Illustrator</span>
+    <span class="marquee-item">Photoshop</span>
+    <span class="marquee-item filled">InDesign</span>
+    <span class="marquee-item">Canva</span>
+    <span class="marquee-item filled">AI Tools</span>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="process-inner">
+    <h2 class="section-title">My design <em>process</em></h2>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-title">Discover</div>
+        <div class="step-desc">Understanding your brand, audience, goals and competitive landscape to define a clear design direction.</div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">02</div>
+        <div class="step-title">Ideate</div>
+        <div class="step-desc">Sketching concepts, mood boarding, and exploring creative directions that align with your brand vision.</div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">03</div>
+        <div class="step-title">Design</div>
+        <div class="step-desc">Crafting pixel-perfect visuals in Figma and Adobe Suite, from initial mockups to refined, polished deliverables.</div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">04</div>
+        <div class="step-title">Deliver</div>
+        <div class="step-desc">Packaging and handing off final files with documentation, ensuring seamless implementation and brand consistency.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="edu-inner">
+    <h2 class="section-title">Academic <em>background</em></h2>
+    <div class="edu-list reveal">
+      <div class="edu-item">
+        <span class="edu-num">01</span>
+        <span class="edu-title">Diploma in Film Editing</span>
+        <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 4v16M17 4v16M2 9h5M17 9h5M2 15h5M17 15h5"/></svg></div>
+      </div>
+      <div class="edu-item">
+        <span class="edu-num">02</span>
+        <span class="edu-title">Higher Secondary Education (Plus Two)</span>
+        <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+      </div>
+      <div class="edu-item">
+        <span class="edu-num">03</span>
+        <span class="edu-title">Secondary School (SSLC)</span>
+        <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-inner">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px">
+      <div>
+        <div class="section-label">What I Do</div>
+        <h2 class="section-title" style="margin-bottom:0">My <em>services</em></h2>
+      </div>
+      <p class="services-sub-desc" style="font-size:14px;line-height:1.8;max-width:320px;text-align:right">
+        End-to-end design across brand, digital &amp; print — built to make your business look as good as it performs.
+      </p>
+    </div>
+    <div class="services-grid">
+
+      <!-- 01 Brand Identity -->
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <div class="service-title">Brand Identity</div>
+        <div class="service-desc">A complete visual identity system that tells your brand's story at a glance — from first impression to lasting recall.</div>
+        <div class="service-tags">
+          <span class="tag">Logo Design</span>
+          <span class="tag">Visual Identity</span>
+          <span class="tag">Style Guide</span>
+          <span class="tag">Brand Strategy</span>
+        </div>
+      </div>
+
+      <!-- 02 UI/UX Design -->
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/>
+          </svg>
+        </div>
+        <div class="service-title">UI / UX Design</div>
+        <div class="service-desc">Intuitive, beautiful digital interfaces crafted with user research and design thinking — screens people actually enjoy using.</div>
+        <div class="service-tags">
+          <span class="tag">Wireframing</span>
+          <span class="tag">Prototyping</span>
+          <span class="tag">Figma</span>
+          <span class="tag">User Research</span>
+        </div>
+      </div>
+
+      <!-- 03 Social Media -->
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+          </svg>
+        </div>
+        <div class="service-title">Social Media Design</div>
+        <div class="service-desc">Thumb-stopping visuals that drive engagement, build brand presence and turn followers into loyal customers.</div>
+        <div class="service-tags">
+          <span class="tag">Instagram Posts</span>
+          <span class="tag">Ad Creatives</span>
+          <span class="tag">Reels Covers</span>
+          <span class="tag">Stories</span>
+        </div>
+      </div>
+
+      <!-- 04 Print Design -->
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+          </svg>
+        </div>
+        <div class="service-title">Print Design</div>
+        <div class="service-desc">Premium print collateral with precision craftsmanship — from business cards and brochures to packaging that elevates your brand on shelf.</div>
+        <div class="service-tags">
+          <span class="tag">Brochures</span>
+          <span class="tag">Flyers</span>
+          <span class="tag">Posters</span>
+          <span class="tag">Packaging</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="experience-inner">
+    <h2 class="section-title">Work <em>history</em></h2>
+
+    <div class="exp-timeline">
+
+      <!-- Entry 01 -->
+      <div class="exp-entry reveal">
+        <div class="exp-num">
+          <div class="exp-num-badge">01</div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-period-tag">2026 – Present</div>
+          <div class="exp-title">Graphic Designer</div>
+          <div class="exp-role">Acumen Capital Marketing &nbsp;·&nbsp; Kacheripady, Kochi</div>
+          <div class="exp-divider"></div>
+          <div class="exp-bullets">
+            <div class="exp-bullet"><div class="exp-bullet-dot"></div>Creating brand visuals, marketing materials and digital assets for financial services</div>
+            <div class="exp-bullet"><div class="exp-bullet-dot"></div>Designing social media creatives, banners and promotional campaigns</div>
+            <div class="exp-bullet"><div class="exp-bullet-dot"></div>Developing consistent visual identity across print and digital platforms</div>
+            <div class="exp-bullet"><div class="exp-bullet-dot"></div>Collaborating with marketing team to deliver SEBI-compliant design content</div>
+          </div>
+          <div class="exp-skills-row">
+            <span class="exp-skill-tag">Adobe Illustrator</span>
+            <span class="exp-skill-tag">Photoshop</span>
+            <span class="exp-skill-tag">Canva</span>
+            <span class="exp-skill-tag">Brand Design</span>
+            <span class="exp-skill-tag">Social Media</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Entry 02 -->
+      <div class="exp-entry reveal">
+        <div class="exp-num">
+          <div class="exp-num-badge">02</div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-period-tag">2023 – 2026</div>
+          <div class="exp-title">Graphic Designer & UI/UX Designer</div>
+          <div class="exp-role">Wishtree Infosolutions &nbsp;·&nbsp; Vyttila, Kochi</div>
+          <div class="exp-divider"></div>
+          <div class="exp-bullets">
+            <div class="exp-bullet"><div class="exp-bullet-dot"></div>Designed UI/UX for web and mobile applications using Figma</div>
+            <div class="exp-bullet"><div class="exp-bullet-dot"></div>Created brand identities, packaging and print design for diverse clients</div>
+            <div class="exp-bullet"><div class="exp-bullet-dot"></div>Produced social media creatives, ad campaigns and motion graphics</div>
+            <div class="exp-bullet"><div class="exp-bullet-dot"></div>Collaborated with developers to deliver pixel-perfect product interfaces</div>
+          </div>
+          <div class="exp-skills-row">
+            <span class="exp-skill-tag">Figma</span>
+            <span class="exp-skill-tag">UI/UX Design</span>
+            <span class="exp-skill-tag">Adobe Suite</span>
+            <span class="exp-skill-tag">Brand Identity</span>
+            <span class="exp-skill-tag">Packaging Design</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /exp-timeline -->
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-left">
+    <h2 class="contact-heading">Let's create<br>something <em>bold</em></h2>
+    <a href="https://wa.me/919605195823" target="_blank" class="contact-link">
+      <div class="contact-link-icon" style="color:#fff">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </div>
+      WhatsApp — Chat Now
+    </a>
+    <a href="mailto:alexa87477@gmail.com" class="contact-link">
+      <div class="contact-link-icon" style="color:#fff">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </div>
+      alexa87477@gmail.com
+    </a>
+    <a href="tel:+919605195823" class="contact-link">
+      <div class="contact-link-icon" style="color:#fff">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      </div>
+      +91 9605 195823
+    </a>
+  </div>
+  <div class="contact-right">
+    <div class="contact-right-heading">Find me on social</div>
+    <div class="contact-info-row">
+      <div class="contact-info-item">
+        <span style="display:flex;align-items:center;opacity:0.8"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span>Kochi, Kerala, India</span>
+      </div>
+      <div class="contact-info-item">
+        <span style="display:flex;align-items:center;opacity:0.8"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        <span>Mon–Sat, 9AM–7PM IST</span>
+      </div>
+      <div class="contact-info-item">
+        <span style="display:flex;align-items:center;opacity:0.8"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="12"/><path d="M2 12h20"/></svg></span>
+        <span>Open to freelance projects</span>
+      </div>
+    </div>
+    <a href="https://www.behance.net/alexcl4" target="_blank" class="cta-big">
+      View Portfolio on Behance →
+    </a>
+    <a href="https://www.instagram.com/4lex_vegas1" target="_blank" class="cta-big cta-big-secondary" style="margin-top:0">
+      Follow on Instagram →
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copy">© 2026 Alex Lawrence. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="https://www.behance.net/alexcl4" target="_blank">Behance</a>
+    <a href="https://www.instagram.com/4lex_vegas1" target="_blank">Instagram</a>
+    <a href="mailto:alexa87477@gmail.com">Email</a>
+  </div>
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>
